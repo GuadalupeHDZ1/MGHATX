@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora CRC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de CRC</h1>
+
+    <form id="crcForm">
+      <label for="mx">Trama M(x) (16 a 24 bits en binario):</label>
+      <input type="text" id="mx" placeholder="Ej. 110101100111010101010101" maxlength="24" required />
+
+      <label for="gx">Polinomio G(x) (4 a 8 bits en binario):</label>
+      <input type="text" id="gx" placeholder="Ej. 10011011" maxlength="8" required />
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
